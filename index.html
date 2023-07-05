@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="header">DevTool Convertor</div>
+  <div class="button-container">
+    <button onclick="convertCode()">Convert</button>
+    <button onclick="debugCode()">Debug</button>
+    <button onclick="checkCodeQuality()">Check Quality</button>
+    <select id="language-select">
+      <option value="java">Java</option>
+      <option value="python">Python</option>
+      <option value="cpp">C++</option>
+      <option value="javascript">JavaScript</option>
+    </select>
+  </div>
+
+  <div class="container">
+    <div class="editor-frame" contenteditable="true" id="editor-frame"></div>
+    <div class="output-frame" id="output-frame"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
